@@ -60,6 +60,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // Logo Ekle
+            Image.asset(
+              'assets/logo.png',
+              height: 150,
+            ),
+            const SizedBox(height: 20),
             const Text(
               'Kullanıcı Adınızı Girin',
               style: TextStyle(color: Color(0xFFEEEEEE), fontSize: 20),
@@ -92,7 +98,6 @@ class MainScreen extends StatefulWidget {
   @override
   _MainScreenState createState() => _MainScreenState();
 }
-
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
